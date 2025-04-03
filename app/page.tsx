@@ -21,14 +21,14 @@ export default function Home() {
 
   return (
     <div
-      className="background-container"
+      className="background-container pb-8 text-gray-50"
       style={{
         backgroundImage: `url(${backgrounds[currentBackground]})`,
         transition: "background-image 1s ease-in-out", // Hiệu ứng chuyển đổi mượt mà
       }}>
-      <div>
+      <div className="max-w-[1440px] mx-auto px-15">
         <main>
-          <div className={`flex justify-center items-center pt-[100px]`}>
+          <div className={`flex justify-between items-center pt-[100px]`}>
             <div>
               <Image
                 src={"/home-1.png"}
