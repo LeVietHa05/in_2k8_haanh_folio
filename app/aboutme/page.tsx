@@ -57,7 +57,7 @@ export default function Home() {
           {/* main here */}
           <div className="pt-15">
             <div className="flex items-center justify-between">
-              <div className="w-[660px]">
+              <div className="max-w-[660px]">
                 <div className="vogue text-[44px] leading [40px]">
                   The Art of Painting on Pottery: A Tribute to Vietnam’s
                   Heritage
@@ -89,7 +89,7 @@ export default function Home() {
                   height={670}
                   alt="anh 2"></Image>
               </div>
-              <div className="w-[660px]">
+              <div className="max-w-[660px]">
                 <ul className="list-disc pl-4 text-gray-200 text-2xl font-semibold leading-[38px]">
                   <li>
                     Pottery is a time-honored craft, embodying history,
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-[900px] mx-auto pt-20 text-gray-200 text-xl leading-[36px]">
+            <div className="max-w-[900px] mx-auto pt-20 text-gray-200 text-xl leading-[36px]">
               As tradition meets modernity, ceramic artistry continues to
               inspire contemporary design, blending ancient techniques with
               innovative expression. The lotus, symbolizing purity, resilience,
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-[900px] mx-auto pt-20 text-gray-200 text-xl leading-[36px]">
+            <div className="max-w-[900px] mx-auto pt-20 text-gray-200 text-xl leading-[36px]">
               Vietnam’s rich cultural heritage is vividly reflected in ceramic
               artistry, a source of pride not only for the people but also for
               the entire nation. The passage of time has witnessed the

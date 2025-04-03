@@ -24,11 +24,11 @@ export default function Home() {
         backgroundImage: `url(${backgrounds[currentBackground]})`,
         transition: "background-image 1s ease-in-out", // Hiệu ứng chuyển đổi mượt mà
       }}>
-      <div className="max-w-[1440px] mx-auto px-20">
+      <div className="max-w-[1440px] w-full mx-auto px-20">
         <main>
           {/* main here */}
           <div className="pt-20">
-            <div className="w-[900px] mx-auto pt-20 text-gray-200 text-2xl leading-[36px]">
+            <div className="max-w-[900px] mx-auto pt-20 text-gray-200 text-2xl leading-[36px]">
               Most of the proceeds from the sale of pottery art pieces are used
               to fund environmental and charitable projects founded by Nguyễn Hà
               Anh. These philanthropic organizations and projects include
@@ -49,7 +49,7 @@ export default function Home() {
                 height={384}
                 alt="anh bia fb"></Image>
             </div>
-            <div className="w-[900px] mx-auto pt-20 text-gray-200 text-2xl leading-[36px]">
+            <div className="max-w-[900px] mx-auto pt-20 text-gray-200 text-2xl leading-[36px]">
               Founded in 2021, Eco Wander is a non-profit organization
               established by students in Vietnam with the mission of raising
               public awareness about environmental protection, focusing on
@@ -63,17 +63,21 @@ export default function Home() {
                 https://www.facebook.com/eco.wander24
               </Link>
             </div>
-            <div className="py-10 flex gap-10 justify-between">
-              <Image
-                src={"/charity/2.png"}
-                width={620}
-                height={581}
-                alt="eco.wander24 1"></Image>
-              <Image
-                src={"/charity/3.png"}
-                width={620}
-                height={581}
-                alt="eco.wander24 1"></Image>
+            <div className="py-10 flex gap-10 justify-between shrink">
+              <div className="shrink">
+                <Image
+                  src={"/charity/2.png"}
+                  width={620}
+                  height={581}
+                  alt="eco.wander24 1"></Image>
+              </div>
+              <div className="shrink">
+                <Image
+                  src={"/charity/3.png"}
+                  width={620}
+                  height={581}
+                  alt="eco.wander24 1"></Image>
+              </div>
             </div>
           </div>
         </main>
