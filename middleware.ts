@@ -14,9 +14,13 @@ export function middleware(request: NextRequest) {
   if (specialKey !== VALID_SPECIAL_KEY) {
     // Lấy URL gốc mà người dùng đang cố truy cập
     const redirectUrl = url.pathname + url.search;
-    // Chuyển hướng đến /unauthorized với redirectUrl làm query parameter
+    // Chuyển hướng đến /unauthorized với redirectUrl và invalidKey
     const redirectTo = new URL("/unauthorized", request.url);
     redirectTo.searchParams.set("redirect", redirectUrl);
+    // Nếu có specialKey và nó không hợp lệ, thêm invalidKey=true
+    if (specialKey) {
+      redirectTo.searchParams.set("invalidKey", "true");
+    }
     return NextResponse.redirect(redirectTo);
   }
 
