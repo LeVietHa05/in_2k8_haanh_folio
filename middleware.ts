@@ -12,7 +12,12 @@ export function middleware(request: NextRequest) {
 
   // Nếu specialKey không hợp lệ, chuyển hướng đến trang unauthorized
   if (specialKey !== VALID_SPECIAL_KEY) {
-    return NextResponse.redirect(new URL("/unauthorized", request.url));
+    // Lấy URL gốc mà người dùng đang cố truy cập
+    const redirectUrl = url.pathname + url.search;
+    // Chuyển hướng đến /unauthorized với redirectUrl làm query parameter
+    const redirectTo = new URL("/unauthorized", request.url);
+    redirectTo.searchParams.set("redirect", redirectUrl);
+    return NextResponse.redirect(redirectTo);
   }
 
   // Nếu hợp lệ, tiếp tục render trang

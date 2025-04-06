@@ -1,15 +1,36 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation"; // Để lấy redirect query parameter
 import styles from "./NoAuthorized.module.css";
 
 export default function NoAuthorized() {
   const [keyInput, setKeyInput] = useState("");
+  const searchParams = useSearchParams();
+
+  // Lấy redirect URL từ query parameters
+  const redirectUrl = searchParams.get("redirect") || "/"; // Mặc định là '/' nếu không có redirect
+
+  // Kiểm tra localStorage khi component mount
+  useEffect(() => {
+    const storedKey = localStorage.getItem("specialKey");
+    if (storedKey) {
+      // Nếu đã có specialKey trong localStorage, tự động thử lại
+      const url = new URL(redirectUrl, window.location.origin);
+      url.searchParams.set("specialKey", storedKey);
+      window.location.href = url.toString();
+    }
+  }, [redirectUrl]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Thay vì dùng router.push, ta làm mới trang với specialKey
-    window.location.href = `/?specialKey=${keyInput}`;
+    // Lưu specialKey vào localStorage
+    localStorage.setItem("specialKey", keyInput);
+    // Tạo URL mới với redirectUrl và thêm specialKey
+    const url = new URL(redirectUrl, window.location.origin);
+    url.searchParams.set("specialKey", keyInput);
+    // Làm mới trang với URL mới
+    window.location.href = url.toString();
   };
 
   return (

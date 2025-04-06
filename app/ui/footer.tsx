@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="pb-8">
           Everything on this site is copyrighted unless otherwise noted.
         </div>
-        <div className="leading-[26px]">
+        <div className="leading-[26px] line-clamp-9">
           Copyright Law protects the Artist&apos;s Copyright in their original
           artworks. All viewers should be aware that the Copyright of the
           artworks located on this website remains the exclusive property of the
