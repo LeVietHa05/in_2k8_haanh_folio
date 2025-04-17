@@ -25,7 +25,7 @@ export function Nav({ children }: NavProps) {
             <Link
               key={link.name}
               href={link.href}
-              className={`text-gray-600 flex justify-center hover:shadow-md px-4 py-2 rounded-[10px] hover:bg-white/60 hover:text-purple-600  ${activeStyle}`}>
+              className={`text-gray-600 flex justify-center hover:shadow-md px-4 py-2 rounded-[10px] hover:bg-white/60 hover:text-[#518224]  ${activeStyle}`}>
               <p>{link.name}</p>
             </Link>
           );
