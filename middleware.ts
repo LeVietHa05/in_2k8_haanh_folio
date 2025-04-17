@@ -30,5 +30,8 @@ export function middleware(request: NextRequest) {
 
 // Áp dụng middleware cho toàn bộ trang, trừ một số route cụ thể
 export const config = {
-  matcher: ["/((?!unauthorized|_next/static|_next/image|favicon.ico).*)"],
+  matcher: [
+    // Chỉ áp dụng middleware cho các route không bắt đầu bằng các đường dẫn tĩnh
+    "/((?!unauthorized|_next/static|_next/image|favicon.ico|.*\\.(?:jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot|ico|ttf)).*)",
+  ],
 };

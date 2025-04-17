@@ -17,7 +17,7 @@ const links = [
 export function Nav({ children }: NavProps) {
   const pathname = usePathname();
   return (
-    <nav className="p-4 px-8 text-2xl fixed top-0 right-0 rounded-bl-3xl bg-white/30 border-b-2 border-b border-purple-500">
+    <nav className="p-4 px-8 leading-9 text-2xl fixed z-2 top-0 right-0 backdrop-blur-2xl rounded-bl-3xl bg-white/30 border-b-2 border-b border-gray-200">
       <ul className="flex space-x-4">
         {links.map((link) => {
           const activeStyle = pathname === link.href ? "custom-nav-active" : "";
@@ -25,7 +25,7 @@ export function Nav({ children }: NavProps) {
             <Link
               key={link.name}
               href={link.href}
-              className={`text-gray-200 flex justify-center hover:shadow-md px-4 py-2 rounded-[10px] hover:bg-white/60 hover:text-purple-600  ${activeStyle}`}>
+              className={`text-gray-600 flex justify-center hover:shadow-md px-4 py-2 rounded-[10px] hover:bg-white/60 hover:text-purple-600  ${activeStyle}`}>
               <p>{link.name}</p>
             </Link>
           );

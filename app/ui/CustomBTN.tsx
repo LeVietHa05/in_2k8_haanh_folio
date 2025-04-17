@@ -12,7 +12,7 @@ export default function CustomBTN({
   return (
     <Link href={_href ? _href : "/"}>
       <div
-        className={`border border-1 border-[#F9F5FF] px-4 py-2 rounded-[10px] text-[#F9F5FF] text-[20px] w-fit ${customClass}`}>
+        className={`border border-1 border-gray-500 px-4 py-2 rounded-[10px] text-gray-500 text-[20px] w-fit ${customClass}`}>
         {text}
       </div>
     </Link>
