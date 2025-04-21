@@ -4,10 +4,10 @@ import { montserrat, monteCarlo } from "../ui/fonts";
 export default function Home() {
   return (
     <div className="background-container pb-8 text-gray-50">
-      <div className="max-w-[1440px] mx-auto px-15">
+      <div className="max-w-[1440px] mx-auto sm:px-15">
         <main>
           <div
-            className={`flex justify-between items-center mb-20 pt-[100px] relative`}>
+            className={`flex flex-col gap-10 sm:flex-row justify-between items-center mb-5 sm:mb-20 sm:pt-[100px] relative`}>
             <Image
               src={"/aboutme/bg.png"}
               alt="Background"
@@ -17,6 +17,16 @@ export default function Home() {
               quality={75}
               sizes="50%"
               objectPosition="left"
+              className="z-0 hidden sm:block"
+            />
+            <Image
+              src="/image/bg-mobile.png"
+              alt="Background"
+              fill
+              priority
+              quality={75}
+              sizes="100vw"
+              className="z-0 block sm:hidden"
             />
             <div className="relative z-1">
               <Image
@@ -26,11 +36,13 @@ export default function Home() {
                 alt="abc"></Image>
             </div>
             <div
-              className={`text-gray-700 relative z-1 text-2xl flex flex-col gap-7 ${montserrat.className}  backdrop-blur-xs rounded-xl p-8`}>
+              className={`text-gray-700 text-xl sm:text-2xl flex flex-col gap-7 ${montserrat.className} bg-white/30 backdrop-blur-sm rounded-xl p-8`}>
               <div className="font-semibold">Welcome to Ha Anh’s Portfolio</div>
-              <div className={`vogue text-[66px] `}>ha anh Nguyen</div>
+              <div className={`vogue text-[44px] sm:text-[66px] `}>
+                ha anh Nguyen
+              </div>
               <div
-                className={`text-[#47761D] text-[56px] ${monteCarlo.className}`}>
+                className={`text-[#47761D] text-[34px] sm:text-[56px] ${monteCarlo.className}`}>
                 The Art of Painting on Pottery
               </div>
               <Image
@@ -38,20 +50,20 @@ export default function Home() {
                 width={58}
                 height={73}
                 alt="icon"
-                className="absolute top-0 right-30"
+                className="absolute top-0 right-30 hidden sm:block"
               />
               <Image
                 src={"/smoothinnercorner.svg"}
                 width={45}
                 height={57}
-                className="absolute top-10 left-0"
+                className="absolute top-10 left-0 hidden sm:block"
                 alt="icon"
               />
             </div>
           </div>
 
           {/* main here */}
-          <div className="pt-15 relative bg-[#F7F6E5]">
+          <div className="sm:pt-15 sm:px-0 px-4 relative bg-[#F7F6E5] text-xl sm:text-2xl">
             <Image
               src={"/aboutme/bg.png"}
               alt="Background"
@@ -63,9 +75,9 @@ export default function Home() {
                 position: "absolute",
               }}
             />
-            <div className="flex items-center justify-between relative z-1">
+            <div className="flex flex-col-reverse sm:flex-row gap-3 items-center justify-center  sm:justify-between relative z-1">
               <div className="max-w-[660px]  relative z-1">
-                <div className="vogue text-[44px] leading-[40px] text-gray-800 relative">
+                <div className="vogue sm:text-[44px] sm:leading-[40px] text-[28px] leading-[28px] text-gray-800 relative">
                   The Art of Painting on Pottery: A Tribute to Vietnam’s
                   Heritage
                   <Image
@@ -73,10 +85,10 @@ export default function Home() {
                     width={58}
                     height={73}
                     alt="icon"
-                    className="absolute -top-10 right-10"
+                    className="absolute -top-10 right-10  hidden sm:block"
                   />
                 </div>
-                <ul className="list-disc italic pl-4 pt-4 text-gray-600 text-2xl font-semibold leading-[38px]">
+                <ul className="list-disc italic pl-4 pt-4 text-gray-600 font-semibold sm:leading-[38px] leading-9">
                   <li>
                     My love for Vietnam’s traditional cultural values and the
                     lotus flower - Vietnam’s symbolic bloom - has led me to the
@@ -86,15 +98,15 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className=" relative z-1">
+              <div className=" relative z-1 w-9/10 sm:w-full flex justify-end">
                 <Image
                   src={"/aboutme/P4.png"}
                   width={506}
                   height={675}
-                  alt="anh 1"></Image>
+                  alt="anh 1"
+                  className=""></Image>
               </div>
             </div>
-
             <Image
               src={"/aboutme/bg.png"}
               alt="Background"
@@ -108,10 +120,9 @@ export default function Home() {
                 left: "10%",
               }}
             />
-
-            <div className="flex items-center justify-between pt-10 relative z-1">
+            <div className="flex flex-col-reverse sm:flex-row items-center justify-center sm:justify-between pt-10 relative z-1">
               <div className="max-w-[660px]">
-                <ul className="list-disc italic pl-4 text-gray-600 text-2xl font-semibold leading-[38px] relative">
+                <ul className="list-disc italic pl-4 pt-4 text-gray-600 font-semibold sm:leading-[38px] leading-9 relative">
                   <li>
                     Pottery is a time-honored craft, embodying history,
                     creativity, and cultural identity. Ceramic sculpting and
@@ -125,17 +136,19 @@ export default function Home() {
                       width={58}
                       height={73}
                       alt="icon"
-                      className="absolute -top-20 -left-10"
+                      className="absolute -top-20 -left-10  hidden sm:block"
                     />
                   </li>
                 </ul>
               </div>
-              <div className="">
+              <div className="relative z-1 w-9/10 sm:w-full flex justify-end">
                 <Image
                   src={"/aboutme/png.png"}
                   width={506}
                   height={670}
-                  alt="anh 2"></Image>
+                  alt="anh 2"
+                  className=""
+                />
               </div>
             </div>
             <Image
@@ -150,8 +163,8 @@ export default function Home() {
                 bottom: "0%",
               }}
             />
-            <div className="max-w-[900px] mx-auto pt-20 text-gray-700 text-xl leading-[36px] relative z-1">
-              <div className="flex items-center justify pt-5 gap-10">
+            <div className="max-w-[900px] mx-auto pt-5 sm:pt-20 text-gray-700 text-base sm:text-xl leading-[36px] relative z-1">
+              <div className="flex flex-col-reverse sm:flex-row items-center justify pt-5 gap-10">
                 <div>
                   As tradition meets modernity, ceramic artistry continues to
                   inspire contemporary design, blending ancient techniques with
