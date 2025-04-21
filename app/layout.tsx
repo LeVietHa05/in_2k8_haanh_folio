@@ -19,26 +19,27 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${montserrat.className} antialiased background-container bg-[#F7F6E5]`}>
-        <div>
-          <div className="fixed top-0 z-2">
-            <div className="text-gray-700 text-[44px] px-8 pt-6 vogue backdrop-blur-2xl rounded-br-3xl bg-white/30 border-b-2 border-b border-gray-200">
-              HAANH-folio
-            </div>
-            <Nav />
+        <div className="fixed top-0 z-50">
+          <div className="hidden sm:block text-gray-700 text-3xl sm:text-[44px] px-4 sm:px-8 pt-4 sm:pt-6 vogue backdrop-blur-2xl rounded-br-3xl bg-white/30 border-b-2 border-gray-200 flex justify-between items-center">
+            <span>HAANH-folio</span>
           </div>
+          <Nav />
         </div>
-        <div className="mt-[148px]">
+        <div className="mt-24 sm:mt-[148px] relative">
           <Image
-            src={"/image/bg.png"}
+            src="/image/bg.png"
             alt="Background"
             layout="fill"
             objectFit="contain"
             priority
             quality={75}
             sizes="100vw"
+            className="z-0 hidden sm:block"
           />
-          {children}
-          <Footer />
+          <div className="relative z-10">
+            {children}
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
