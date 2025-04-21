@@ -3,7 +3,7 @@ import { montserrat } from "./ui/fonts";
 import "./globals.css";
 import { Nav } from "./ui/nav";
 import Footer from "./ui/footer";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const metadata: Metadata = {
   title: "HAANH-FOLIO",

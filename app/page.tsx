@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import CustomBTN from "./ui/CustomBTN";
 import { montserrat } from "./ui/fonts";
 
