@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full min-h-[472px] px-4 py-6 sm:px-20 sm:py-10 mt-20 flex sm:flex-row flex-col justify-center items-start gap-10  bg-white/30 backdrop-blur-sm text-gray-800 relative z-1">
+    <footer className="w-full min-h-[472px] px-4 py-6 sm:px-20 sm:py-10 mt-10 sm:mt-20 flex sm:flex-row flex-col justify-center items-start gap-10  bg-white/30 backdrop-blur-sm text-gray-800 relative z-1">
       <div className="max-w-[360px]">
         <div>
           <div className="text-xl font-semibold">Contact</div>

@@ -34,7 +34,7 @@ export default function RootLayout({
             priority
             quality={75}
             sizes="100vw"
-            className="z-0"
+            className="z-0 hidden sm:block"
           />
           <div className="relative z-10">
             {children}
