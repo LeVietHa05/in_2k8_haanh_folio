@@ -50,13 +50,22 @@ export default function Home() {
 
   return (
     <div className="background-container pb-8 text-gray-50 pt-10">
-      <div className="max-w-[1440px] mx-auto px-15 ">
+      <Image
+        src="/image/bg-mobile.png"
+        alt="Background"
+        fill
+        priority
+        quality={75}
+        sizes="100vw"
+        className="z-0 block sm:hidden"
+      />
+      <div className="max-w-[1440px] mx-auto sm:px-15 px-3">
         <main className=" backdrop-blur-sm bg-white/30">
           {/* main here */}
           <div className="vogue uppercase text-[#518224] text-center text-[44px] leading-[40px] py-4">
             my artwork
           </div>
-          <div className="grid grid-cols-3 gap-6 py-10 border-y-1 border-white/30 *:w-[280px] *:m-auto ">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 py-10 border-y-1 border-white/30 *:w-[280px] *:m-auto ">
             {imgOnSaleLink.map((image) => {
               return (
                 <Link key={image.id} href={image.link} scroll={false}>
@@ -66,9 +75,9 @@ export default function Home() {
                       width={280}
                       height={304}
                       alt="anh san pham"
-                      className="group-hover:scale-125 "
+                      className="group-hover:scale-125 focus:scale-125 group-active:scale-125"
                     />
-                    <div className="text-[#40651D] font-semibold text-[22px] opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 left-0 text-center backdrop-blur-sm py-2 bg-white/30">
+                    <div className="text-[#40651D] font-semibold text-[22px] opacity-0 group-hover:opacity-100 group-active:opacity-100 absolute bottom-0 right-0 left-0 text-center backdrop-blur-sm py-2 bg-white/30">
                       Click here for PRICE/AUTION
                     </div>
                   </div>
