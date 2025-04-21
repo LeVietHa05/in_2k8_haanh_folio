@@ -103,14 +103,13 @@ const auctionItems = [
 ];
 
 export default function Aution() {
-
   const handleScrollToHash = () => {
     const hash = window.location.hash;
     if (hash) {
       const elementId = hash.replace("#", "");
       const element = document.getElementById(elementId);
       if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     }
   };
@@ -118,30 +117,30 @@ export default function Aution() {
   useEffect(() => {
     // Xử lý hash khi trang load lần đầu
     handleScrollToHash();
-
-    
   }, []); // Dependency là router.events để lắng nghe thay đổi route
 
   return (
-    <div className="background-container pb-8 text-gray-700 pt-10 leading-9">
-      <div className="max-w-[1440px] mx-auto px-15 ">
+    <div className="background-container pb-8 text-gray-700 mx:pt-10 leading-9">
+      <div className="max-w-[1440px] mx-auto sm:px-15 px-4">
         <main className="">
           {auctionItems.map((item, index) => {
             return (
               <div
                 id={item.id}
                 key={index}
-                className="w-[1084px] p-8 mx-auto my-10 flex justify-center flex-col items-center gap-8 backdrop-blur-[10px] bg-white/30 rounded-2xl">
+                className="sm:w-[1084px] sm:p-8 mx-auto my-10 flex justify-center flex-col items-center gap-8 backdrop-blur-[10px] bg-white/30 rounded-2xl">
                 {/* video and image container */}
-                <div className="flex gap-8">
+                <div className="flex gap-8 flex-col sm:flex-row">
                   {/* video container */}
-                  <div>
+                  <div className="flex justify-center rounded-2xl">
                     {item.videoLink && <Video _link={item.videoLink} />}
                   </div>
                   {/* images container */}
                   <div
                     className={`grid ${
-                      item.videoLink ? "grid-cols-2" : "grid-cols-4"
+                      item.videoLink
+                        ? "grid-cols-2"
+                        : "sm:grid-cols-4 grid-cols-2"
                     } gap-4`}>
                     {item.imgs.map((img, index) => {
                       return (
@@ -158,9 +157,9 @@ export default function Aution() {
                   </div>
                 </div>
                 {/* text */}
-                <div className="flex px-8 gap-10">
+                <div className="flex sm:px-8 px-4 sm:gap-10 gap-4 flex-col sm:flex-row">
                   <div>
-                    <h2 className="text-[#518224] vogue text-3xl">
+                    <h2 className="text-[#518224] vogue sm:text-3xl text-2xl">
                       {item.title}
                     </h2>
                     <div>{item.des}</div>
