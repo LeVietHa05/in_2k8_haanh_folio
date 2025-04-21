@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import CustomBTN from "./ui/CustomBTN";
 import { montserrat } from "./ui/fonts";
 
@@ -10,8 +10,7 @@ export default function Home() {
           <Image
             src="/image/bg-mobile.png"
             alt="Background"
-            layout="fill"
-            objectFit="contain"
+            fill
             priority
             quality={75}
             sizes="100vw"

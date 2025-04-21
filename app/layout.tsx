@@ -3,7 +3,7 @@ import { montserrat } from "./ui/fonts";
 import "./globals.css";
 import { Nav } from "./ui/nav";
 import Footer from "./ui/footer";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "HAANH-FOLIO",
@@ -29,7 +29,7 @@ export default function RootLayout({
           <Image
             src="/image/bg.png"
             alt="Background"
-            layout="fill"
+            fill
             objectFit="contain"
             priority
             quality={75}
