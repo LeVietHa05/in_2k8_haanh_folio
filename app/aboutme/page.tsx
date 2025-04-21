@@ -88,7 +88,7 @@ export default function Home() {
               </div>
               <div className=" relative z-1">
                 <Image
-                  src={"/aboutme/P2.png"}
+                  src={"/aboutme/P4.png"}
                   width={506}
                   height={675}
                   alt="anh 1"></Image>
@@ -132,7 +132,7 @@ export default function Home() {
               </div>
               <div className="">
                 <Image
-                  src={"/aboutme/P4.png"}
+                  src={"/aboutme/png.png"}
                   width={506}
                   height={670}
                   alt="anh 2"></Image>
@@ -151,35 +151,31 @@ export default function Home() {
               }}
             />
             <div className="max-w-[900px] mx-auto pt-20 text-gray-700 text-xl leading-[36px] relative z-1">
-              As tradition meets modernity, ceramic artistry continues to
-              inspire contemporary design, blending ancient techniques with
-              innovative expression. The lotus, symbolizing purity, resilience,
-              and the Vietnamese spirit, plays a central role in my work. With
-              deep philosophical meaning spanning past, present, and future, it
-              represents love, devotion, and self-perfection. Beyond that, the
-              lotus carries deep philosophical meanings in both space and
-              time—encompassing the past, present, and future—reflecting the
-              cycle of reincarnation and human self-perfection. The lotus root
-              and tuber represent the past, the seed pod symbolizes the present,
-              and the seeds embody the future. My ceramic artworks featuring the
-              lotus flower are a story born from this love for my homeland and
-              its traditional cultural values
               <div className="flex items-center justify pt-5 gap-10">
                 <div>
+                  As tradition meets modernity, ceramic artistry continues to
+                  inspire contemporary design, blending ancient techniques with
+                  innovative expression. The lotus, symbolizing purity,
+                  resilience, and the Vietnamese spirit, plays a central role in
+                  my work. With deep philosophical meaning spanning past,
+                  present, and future, it represents love, devotion, and
+                  self-perfection. Beyond that, the lotus carries deep
+                  philosophical meanings in both space and time—encompassing the
+                  past, present, and future—reflecting the cycle of
+                  reincarnation and human self-perfection. The lotus root and
+                  tuber represent the past, the seed pod symbolizes the present,
+                  and the seeds embody the future.
+                </div>
+                <div className="shrink-0">
                   <Image
                     src={"/aboutme/vid-placeholder1.png"}
-                    width={620}
-                    height={766}
+                    width={348}
+                    height={546}
                     alt="anh 3"></Image>
                 </div>
-                <div>
-                  <Image
-                    src={"/aboutme/png.png"}
-                    width={620}
-                    height={766}
-                    alt="anh 4"></Image>
-                </div>
               </div>
+              My ceramic artworks featuring the lotus flower are a story born
+              from this love for my homeland and its traditional cultural values
               <div className=" mx-auto pt-10 ">
                 Vietnam’s rich cultural heritage is vividly reflected in ceramic
                 artistry, a source of pride not only for the people but also for
