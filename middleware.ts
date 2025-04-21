@@ -32,6 +32,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Chỉ áp dụng middleware cho các route không bắt đầu bằng các đường dẫn tĩnh
-    "/((?!unauthorized|_next/static|_next/image|favicon.ico|.*\\.(?:jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot|ico|ttf)).*)",
+    "/((?!unauthorized|_next/static|_next/image|favicon.ico|.*\\.(?:jpg|jpeg|png|gif|svg|woff|woff2|ttf|eot|ico|ttf|mp4)).*)",
   ],
 };
