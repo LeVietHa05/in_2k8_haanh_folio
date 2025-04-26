@@ -3,7 +3,7 @@ import { montserrat, monteCarlo } from "../ui/fonts";
 
 export default function Home() {
   return (
-    <div className="background-container pb-8 text-gray-50">
+    <div className="background-container pb-8 text-gray-50 text-justify">
       <div className="max-w-[1440px] mx-auto sm:px-15">
         <main>
           <div
@@ -37,7 +37,7 @@ export default function Home() {
             </div>
             <div
               className={`text-gray-700 text-xl sm:text-2xl flex flex-col gap-7 ${montserrat.className} bg-white/30 backdrop-blur-sm rounded-xl p-8`}>
-              <div className="font-semibold">Welcome to Ha Anh’s Portfolio</div>
+              <div className="font-medium">Welcome to Ha Anh’s Portfolio</div>
               <div className={`vogue text-[44px] sm:text-[66px] `}>
                 ha anh Nguyen
               </div>
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
 
           {/* main here */}
-          <div className="sm:pt-15 sm:px-0 px-4 relative bg-[#F7F6E5] text-xl sm:text-2xl">
+          <div className="sm:pt-15 sm:px-0 px-4 relative bg-[#F7F6E5] text-xl">
             <Image
               src={"/aboutme/bg.png"}
               alt="Background"
@@ -75,37 +75,29 @@ export default function Home() {
                 position: "absolute",
               }}
             />
-            <div className="flex flex-col-reverse sm:flex-row gap-3 items-center justify-center  sm:justify-between relative z-1">
-              <div className="max-w-[660px]  relative z-1">
+            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1 flex flex-col-reverse sm:flex-row items-center justify gap-10">
+              <div className="max-w-[500px]  relative z-1">
                 <div className="vogue sm:text-[44px] sm:leading-[40px] text-[28px] leading-[28px] text-gray-800 relative">
                   The Art of Painting on Pottery: A Tribute to Vietnam’s
                   Heritage
-                  <Image
-                    src={"/smoothinnercorner.svg"}
-                    width={58}
-                    height={73}
-                    alt="icon"
-                    className="absolute -top-10 right-10  hidden sm:block"
-                  />
                 </div>
-                <ul className="list-disc italic pl-4 pt-4 text-gray-600 font-semibold sm:leading-[38px] leading-9">
-                  <li>
-                    My love for Vietnam’s traditional cultural values and the
-                    lotus flower - Vietnam’s symbolic bloom - has led me to the
-                    art of painting on pottery. Growing up near a renowned
-                    ceramic village, surrounded by blooming lotuses each summer,
-                    I developed a deep connection to both. 
-                  </li>
-                </ul>
+                <div className="pt-4 text-gray-600 font-medium sm:leading-[38px] leading-9">
+                  My love for Vietnam’s traditional cultural values and the
+                  lotus flower - Vietnam’s symbolic bloom - has led me to the
+                  art of painting on pottery. Growing up near a renowned ceramic
+                  village, surrounded by blooming lotuses each summer, I
+                  developed a deep connection to both. 
+                </div>
               </div>
-              <div className=" relative z-1 w-9/10 sm:w-full flex justify-end">
+              <picture className="shrink-0">
+                <source srcSet="/aboutme/P1.png" media="(min-width: 640px)" />
                 <Image
-                  src={"/aboutme/P4.png"}
+                  src={"/aboutme/P1-mobile.png"}
                   width={506}
                   height={675}
                   alt="anh 1"
-                  className=""></Image>
-              </div>
+                  className="w-80 sm:w-96 h-96"></Image>
+              </picture>
             </div>
             <Image
               src={"/aboutme/bg.png"}
@@ -120,35 +112,26 @@ export default function Home() {
                 left: "10%",
               }}
             />
-            <div className="flex flex-col-reverse sm:flex-row items-center justify-center sm:justify-between pt-10 relative z-1">
-              <div className="max-w-[660px]">
-                <ul className="list-disc italic pl-4 pt-4 text-gray-600 font-semibold sm:leading-[38px] leading-9 relative">
-                  <li>
-                    Pottery is a time-honored craft, embodying history,
-                    creativity, and cultural identity. Ceramic sculpting and
-                    decoration bring this art to life, transforming raw clay
-                    into vibrant masterpieces through skilled craftsmanship and
-                    passion. Beyond functional use, Vietnamese ceramics carry
-                    profound historical significance, reflecting traditions and
-                    daily life across generations.
-                    <Image
-                      src={"/smoothinnercorner.svg"}
-                      width={58}
-                      height={73}
-                      alt="icon"
-                      className="absolute -top-20 -left-10  hidden sm:block"
-                    />
-                  </li>
-                </ul>
-              </div>
-              <div className="relative z-1 w-9/10 sm:w-full flex justify-end">
-                <Image
-                  src={"/aboutme/png.png"}
-                  width={506}
-                  height={670}
-                  alt="anh 2"
-                  className=""
-                />
+            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1">
+              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10">
+                <div>
+                  Pottery is a time-honored craft, embodying history,
+                  creativity, and cultural identity. Ceramic sculpting and
+                  decoration bring this art to life, transforming raw clay into
+                  vibrant masterpieces through skilled craftsmanship and
+                  passion. Beyond functional use, Vietnamese ceramics carry
+                  profound historical significance, reflecting traditions and
+                  daily life across generations.
+                </div>
+                <picture className="shrink-0">
+                  <source srcSet="/aboutme/P2.png" media="(min-width: 640px)" />
+                  <Image
+                    src={"/aboutme/P2-mobile.png"}
+                    width={506}
+                    height={675}
+                    alt="anh 2"
+                    className="w-80 sm:w-96 h-96"></Image>
+                </picture>
               </div>
             </div>
             <Image
@@ -163,8 +146,8 @@ export default function Home() {
                 bottom: "0%",
               }}
             />
-            <div className="max-w-[900px] mx-auto pt-5 sm:pt-20 text-gray-700 text-base sm:text-xl leading-[36px] relative z-1">
-              <div className="flex flex-col-reverse sm:flex-row items-center justify pt-5 gap-10">
+            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1">
+              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10">
                 <div>
                   As tradition meets modernity, ceramic artistry continues to
                   inspire contemporary design, blending ancient techniques with
@@ -181,36 +164,62 @@ export default function Home() {
                 </div>
                 <div className="shrink-0">
                   <Image
-                    src={"/aboutme/vid-placeholder1.png"}
-                    width={348}
-                    height={546}
-                    alt="anh 3"></Image>
+                    src={"/aboutme/P3.png"}
+                    width={506}
+                    height={675}
+                    alt="anh 3"
+                    className="w-80 sm:w-96 h-[546px]"></Image>
                 </div>
               </div>
-              My ceramic artworks featuring the lotus flower are a story born
-              from this love for my homeland and its traditional cultural values
+
               <div className=" mx-auto pt-10 ">
-                Vietnam’s rich cultural heritage is vividly reflected in ceramic
-                artistry, a source of pride not only for the people but also for
-                the entire nation. The passage of time has witnessed the
-                preservation and evolution of this art through generations.
-                Ceramic products are not merely everyday household items; they
-                also hold profound historical significance, reflecting customs
-                and the unique way of life of Vietnamese people across different
-                eras.
-                <br />
-                <br />
-                As tradition and modernity intertwine in today’s contemporary
-                world, ceramic craftsmanship and painting have transcended
-                national cultural boundaries, becoming a diverse source of
-                inspiration in interior design and artistic decoration. Modern
-                pottery possess a beauty that is both sophisticated and
-                contemporary, blending thousands of years of traditional
-                techniques with innovative artistic expressions. These creations
-                are not only aesthetically valuable but also deeply convey the
-                spirit of connection between the past and the present, looking
-                toward a creative future.
-                <br />
+                <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10">
+                  <div>
+                    My ceramic artworks featuring the lotus flower are a story
+                    born from this love for my homeland and its traditional
+                    cultural values <br />
+                    <br />
+                    Vietnam’s rich cultural heritage is vividly reflected in
+                    ceramic artistry, a source of pride not only for the people
+                    but also for the entire nation. The passage of time has
+                    witnessed the preservation and evolution of this art through
+                    generations. Ceramic products are not merely everyday
+                    household items; they also hold profound historical
+                    significance, reflecting customs and the unique way of life
+                    of Vietnamese people across different eras.
+                  </div>
+                  <div className="shrink-0">
+                    <Image
+                      src={"/aboutme/P4.png"}
+                      width={506}
+                      height={675}
+                      alt="anh 4"
+                      className="w-80 sm:w-96 h-[460px]"></Image>
+                  </div>
+                </div>
+                <div className=" pt-5 sm:pt-8 flex flex-col-reverse sm:flex-row items-center justify gap-10">
+                  <div>
+                    As tradition and modernity intertwine in today’s
+                    contemporary world, ceramic craftsmanship and painting have
+                    transcended national cultural boundaries, becoming a diverse
+                    source of inspiration in interior design and artistic
+                    decoration. Modern pottery possess a beauty that is both
+                    sophisticated and contemporary, blending thousands of years
+                    of traditional techniques with innovative artistic
+                    expressions. These creations are not only aesthetically
+                    valuable but also deeply convey the spirit of connection
+                    between the past and the present, looking toward a creative
+                    future.
+                  </div>
+                  <div className="shrink-0">
+                    <Image
+                      src={"/aboutme/P5.png"}
+                      width={506}
+                      height={675}
+                      alt="anh 5"
+                      className="w-80 sm:w-96 h-[460px]"></Image>
+                  </div>
+                </div>
                 <br />
                 For generations, the lotus has been regarded as a familiar yet
                 noble flower. In Vietnamese consciousness, it symbolizes purity
