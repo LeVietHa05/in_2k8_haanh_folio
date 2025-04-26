@@ -1,12 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
+  const imgs = [
+    {
+      src: "/charity/4.png",
+      w: 442,
+      h: 697,
+    },
+    {
+      src: "/charity/5.png",
+      w: 442,
+      h: 697,
+    },
+    {
+      src: "/charity/6.png",
+      w: 442,
+      h: 358,
+    },
+    {
+      src: "/charity/7.png",
+      w: 442,
+      h: 358,
+    },
+  ];
   return (
-    <div className="background-container pb-8 text-gray-50">
+    <div className="background-container pb-8 text-slate-700 text-justify text-base sm:text-2xl leading-loose sm:leading-9">
       <div className="sm:max-w-[1440px] w-full mx-auto sm:px-20 px-3">
         <main>
           {/* main here */}
-          <div className="sm:pt-20 text-gray-700 text-base sm:text-2xl leading-[30px] sm:leading-[36px]">
+          <div className="sm:pt-20   leading-[30px] sm:leading-[36px]">
             <div className="bg-white/30 backdrop-blur-sm sm:p-10 flex flex-col items-center rounded-lg">
               <div className="sm:max-w-[900px] w-full mx-auto ">
                 Most of the proceeds from the sale of pottery art pieces are
@@ -62,6 +84,44 @@ export default function Home() {
                     height={413}
                     alt="eco.wander24 1"></Image>
                 </div>
+              </div>
+            </div>
+
+            <div className="bg-white/30 backdrop-blur-sm mt-10 sm:p-10 flex flex-col items-center rounded-lg">
+              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-20 pt-4">
+                <div className=" font-bold font-['Montserrat'] leading-9">
+                  Key Activities:
+                </div>
+                <div className=" font-medium font-['Montserrat'] leading-9 pt-4">
+                  The project involves planting up to ~8,000 seedlings of acacia
+                  trees per 2 hectares of barren land provided by our corporate
+                  sponsors, supporting seedling supplies, and creating job
+                  opportunities for the local community in planting, nurturing,
+                  and harvesting forest products.
+                </div>
+              </div>
+              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-20 pt-4">
+                <div className="  font-bold font-['Montserrat']">
+                  Groundbreaking ceremony:
+                </div>
+                <div className="  font-medium font-['Montserrat']  pt-4">
+                  On June 4, 2025, Eco Wander successfully held the
+                  groundbreaking ceremony in Ban Chang village, Hoa Muc Commune,
+                  Cho Moi District, Bac Kan Province.
+                </div>
+              </div>
+
+              <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-1 pt-10">
+                {imgs.map((img, i) => {
+                  return (
+                    <Image
+                      src={img.src}
+                      width={img.w}
+                      height={img.h}
+                      alt=""
+                      key={i}></Image>
+                  );
+                })}
               </div>
             </div>
           </div>
