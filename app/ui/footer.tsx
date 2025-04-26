@@ -1,28 +1,29 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full min-h-[472px] px-4 py-6 sm:px-20 sm:py-10 mt-10 sm:mt-20 flex sm:flex-row flex-col justify-center items-start gap-10  bg-white/30 backdrop-blur-sm text-gray-800 relative z-1">
+    <footer className="w-full  px-4 py-6 sm:px-20 sm:py-10 mt-10 sm:mt-20 flex sm:flex-row flex-col justify-center items-start gap-10  bg-white/30 backdrop-blur-sm text-gray-800 relative z-1">
       <div className="max-w-[360px]">
         <div>
-          <div className="text-xl font-semibold">Contact</div>
+          <div className="text-xl font-semibold text-center">Nguyen Ha Anh</div>
         </div>
-        <div className="w-[260px] pt-8">
+        <div className="w-full pt-8">
           <div className="flex py-2 gap-2 ">
             <Image
               src={"/icons/home.svg"}
               width={24}
               height={24}
               alt="icon home"></Image>
-            <div>289A Khuat Duy Tien, Hanoi</div>
+            <div>289A Khuat Duy Tien, Hanoi, Vietnam</div>
           </div>
-          <div className="flex py-2 gap-2 border-b-1 border-t-1 border-gray-300">
+          <div className="flex py-2 gap-2">
             <Image
               src={"/icons/_WhatsApp.png"}
               width={24}
               height={24}
               alt="icon home"></Image>
-            <div>+848 577 81385</div>
+            <div>Phone number: +84 857781385</div>
           </div>
           <div className="flex py-2 gap-2">
             <Image
@@ -30,39 +31,21 @@ export default function Footer() {
               width={24}
               height={24}
               alt="icon home"></Image>
-            <div className="underline">evelyn.anhnh@gmail.com</div>
+            <div>
+              <span>Email:</span>
+              <span className="underline">evelyn.anhnh@gmail.com</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="max-w-[880px] text-sm pb-10">
-        <div className="text-xl font-semibold pb-8">Copyright & Disclaimer</div>
-        <div className="pb-8">
-          Nguyen Ha Anh welcomes you to the website. By viewing the pages of
-          this website, you acknowledge that you have read and accepted these
-          disclaimers.
-        </div>
-        <div className="pb-8">
-          Everything on this site is copyrighted unless otherwise noted.
-          Copyright Law protects the Artist&apos;s Copyright in their original
-          artworks.
-        </div>
-        <div className="leading-[26px] line-clamp-9">
-          All viewers should be aware that the Copyright of the artworks located
-          on this website remains the exclusive property of the Artist.
-          Copyright is administered by Nguyen Ha Anh, the Artists, or their
-          agents. Artworks may be viewed only for the purposes of buyer
-          browsing, and be downloaded only for such purposes. No reproduction
-          may be made of any of the artworks from this website for commercial
-          use for any reason without first receiving written permission from the
-          Gallery, the Artists, or their agents. Under Copyright Law it is fair
-          use to reproduce a single copy for personal or educational purposes,
-          provided that no changes are made to the content and provided that a
-          copyright notice accrediting the content is attached to the
-          reproduction. Beyond that, no further copies of artworks from this
-          website may be made or distributed without written authorization.
-          Nguyen Ha Anh is the copyright owner for all other aspects of the
-          website including text, photographs, and website design unless
-          otherwise stated.
+        <div className="flex justify-start items-center gap-2 text-gray-800 text-xl mt-4">
+          <Image
+            src={"/icons/Frame 226.png"}
+            alt=""
+            width={48}
+            height={48}></Image>
+          <Link href={"/copyright"} className="underline" title="Copyright">
+            Copyright & Disclaimer
+          </Link>
         </div>
       </div>
     </footer>

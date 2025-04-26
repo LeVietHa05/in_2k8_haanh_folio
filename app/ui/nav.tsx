@@ -14,6 +14,8 @@ const links = [
   { name: "Art Work", href: "/artwork" },
   { name: "Sale & Auction", href: "/auction" },
   { name: "Art & Charity", href: "/charity" },
+  { name: "News", href: "/news" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Nav({ children }: NavProps) {
