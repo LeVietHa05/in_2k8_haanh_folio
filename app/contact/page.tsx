@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="max-w-[1060px] bg-white/30 backdrop-blur-sm p-4 sm:px-20 sm:py-10 mx-auto flex gap-10 leading-loose font-['Montserrat'] text-base text-slate-700">
-      <div className="self-stretch inline-flex flex-col items-start gap-4">
+    <div className="max-w-[1060px] bg-white/30 backdrop-blur-sm p-4 sm:px-20 sm:py-10 mx-auto flex flex-col sm:flex-row sm:items-start items-center gap-10 leading-loose font-['Montserrat'] text-base text-slate-700">
+      {/* <div className="self-stretch inline-flex flex-col items-start gap-4">
         <div className="self-stretch text-xl font-medium leading-9">
           All questions and support requests, please leave your information
           here, we will review and respond soon
@@ -40,14 +40,21 @@ export default function Contact() {
             <div className="text-gray-50 text-xl font-semibold ">Send</div>
           </div>
         </div>
-      </div>
-      <div className="rounded-lg pb-3 hidden sm:block">
-        <div className="w-80 inline-flex justify-center items-center gap-2">
+      </div> */}
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfj9rX03Ip5S5QRSlJledGbFXK7gJpUu0uCFmGYTsIYx_kBbQ/viewform?embedded=true"
+        width="523"
+        height="714"
+        className="w-96 sm:w-[523px] shrink-0">
+        Đang tải…
+      </iframe>
+      <div className="rounded-lg pb-3 ">
+        <div className="w-full sm:w-96 p-4 sm:p-0 inline-flex justify-center items-center gap-2">
           <div className="flex-1 text-lime-700 text-2xl font-semibold leading-9">
             Contact
           </div>
         </div>
-        <div className="w-80 flex flex-col items-start gap-2">
+        <div className="w-full sm:w-96 p-4 sm:p-0 flex flex-col items-start gap-2">
           <div className="self-stretch text-slate-800 text-2xl font-semibold leading-9">
             Nguyen Ha Anh
           </div>

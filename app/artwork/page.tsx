@@ -20,7 +20,7 @@ export default function Home() {
     },
     {
       id: 3,
-      src: "/artwork/3.png",
+      src: "/artwork/3-new.png",
       link: "/auction#artwork3",
       title: "lorem 3",
       info: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum consequuntur cupiditate aut perspiciatis est debitis rerum quidem aperiam dolor, fugiat officia ea tempore labore nisi nihil iure eum totam officiis!",

@@ -20,7 +20,7 @@ export default function Home() {
             className={`flex flex-col sm:flex-row justify-between items-center sm:pt-[100px]`}>
             <div>
               <Image
-                src={"/home-1.png"}
+                src={"/home-1-new.png"}
                 width={645}
                 height={615}
                 alt="abc"></Image>

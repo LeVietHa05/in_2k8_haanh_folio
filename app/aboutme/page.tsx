@@ -3,8 +3,8 @@ import { montserrat, monteCarlo } from "../ui/fonts";
 
 export default function Home() {
   return (
-    <div className="background-container pb-8 text-gray-50 text-justify">
-      <div className="max-w-[1440px] mx-auto sm:px-15">
+    <div className="background-container pb-8 text-gray-50 text-justify bg-[#F7F6E5]">
+      <div className="max-w-[1440px] mx-auto sm:px-15 ">
         <main>
           <div
             className={`flex flex-col gap-10 sm:flex-row justify-between items-center mb-5 sm:mb-20 sm:pt-[100px] relative`}>
@@ -30,7 +30,7 @@ export default function Home() {
             />
             <div className="relative z-1">
               <Image
-                src={"/home-1.png"}
+                src={"/home-1-new.png"}
                 width={645}
                 height={615}
                 alt="abc"></Image>
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
 
           {/* main here */}
-          <div className="sm:pt-15 sm:px-0 px-4 relative bg-[#F7F6E5] text-xl">
+          <div className="sm:pt-15 sm:px-0 px-4 relative  text-xl">
             <Image
               src={"/aboutme/bg.png"}
               alt="Background"
@@ -81,7 +81,7 @@ export default function Home() {
                   The Art of Painting on Pottery: A Tribute to Vietnam’s
                   Heritage
                 </div>
-                <div className="pt-4 text-gray-600 font-medium sm:leading-[38px] leading-9">
+                <div className="pt-4 text-gray-600 font-medium sm:leading-9">
                   My love for Vietnam’s traditional cultural values and the
                   lotus flower - Vietnam’s symbolic bloom - has led me to the
                   art of painting on pottery. Growing up near a renowned ceramic
@@ -113,7 +113,7 @@ export default function Home() {
               }}
             />
             <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1">
-              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10">
+              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10 sm:leading-9">
                 <div>
                   Pottery is a time-honored craft, embodying history,
                   creativity, and cultural identity. Ceramic sculpting and
@@ -147,7 +147,7 @@ export default function Home() {
               }}
             />
             <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1">
-              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10">
+              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10 sm:leading-9">
                 <div>
                   As tradition meets modernity, ceramic artistry continues to
                   inspire contemporary design, blending ancient techniques with
@@ -172,8 +172,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className=" mx-auto pt-10 ">
-                <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10">
+              <div className=" mx-auto pt-10 sm:leading-9">
+                <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10 ">
                   <div>
                     My ceramic artworks featuring the lotus flower are a story
                     born from this love for my homeland and its traditional
@@ -197,7 +197,7 @@ export default function Home() {
                       className="w-80 sm:w-96 h-[460px]"></Image>
                   </div>
                 </div>
-                <div className=" pt-5 sm:pt-8 flex flex-col-reverse sm:flex-row items-center justify gap-10">
+                <div className=" pt-5 sm:pt-8 flex flex-col-reverse sm:flex-row items-center justify gap-10 ">
                   <div>
                     As tradition and modernity intertwine in today’s
                     contemporary world, ceramic craftsmanship and painting have

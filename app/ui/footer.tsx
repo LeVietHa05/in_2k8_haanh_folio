@@ -1,9 +1,29 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathName = usePathname();
   return (
-    <footer className="w-full  px-4 py-6 sm:px-20 sm:py-10 mt-10 sm:mt-20 flex sm:flex-row flex-col justify-center items-start gap-10  bg-white/30 backdrop-blur-sm text-gray-800 relative z-1">
+    <footer
+      className={`${
+        pathName.includes("contact") ? "hidden" : ""
+      } w-full  px-4 py-6 sm:px-20 sm:py-10 mt-10 sm:mt-20 flex flex-col justify-center items-center gap-10  bg-white/30 backdrop-blur-sm text-gray-800 relative z-1`}>
+      <div className="flex justify-start items-center gap-2 text-gray-800 text-xl mt-4 w-full">
+        <Link
+          href={"/copyright"}
+          className="underline flex items-center gap-4"
+          title="Copyright  ">
+          <Image
+            src={"/icons/Frame 226.png"}
+            alt=""
+            width={48}
+            height={48}></Image>
+          <div>Copyright & Disclaimer</div>
+        </Link>
+      </div>
       <div className="max-w-[360px]">
         <div>
           <div className="text-xl font-semibold text-center">Nguyen Ha Anh</div>
@@ -36,16 +56,6 @@ export default function Footer() {
               <span className="underline">evelyn.anhnh@gmail.com</span>
             </div>
           </div>
-        </div>
-        <div className="flex justify-start items-center gap-2 text-gray-800 text-xl mt-4">
-          <Image
-            src={"/icons/Frame 226.png"}
-            alt=""
-            width={48}
-            height={48}></Image>
-          <Link href={"/copyright"} className="underline" title="Copyright">
-            Copyright & Disclaimer
-          </Link>
         </div>
       </div>
     </footer>
