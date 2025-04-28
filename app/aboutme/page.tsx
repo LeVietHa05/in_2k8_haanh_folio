@@ -3,7 +3,7 @@ import { montserrat, monteCarlo } from "../ui/fonts";
 
 export default function Home() {
   return (
-    <div className="background-container pb-8 text-gray-50 text-justify bg-[#F7F6E5]">
+    <div className="background-container pb-8 text-justify bg-[#F7F6E5] font-medium">
       <div className="max-w-[1440px] mx-auto sm:px-15 ">
         <main>
           <div
@@ -36,7 +36,7 @@ export default function Home() {
                 alt="abc"></Image>
             </div>
             <div
-              className={`text-gray-700 text-xl sm:text-2xl flex flex-col gap-7 ${montserrat.className} bg-white/30 backdrop-blur-sm rounded-xl p-8`}>
+              className={`text-slate-700 text-xl sm:text-2xl flex flex-col gap-7 ${montserrat.className} bg-white/30 backdrop-blur-sm rounded-xl p-8`}>
               <div className="font-medium">Welcome to Ha Anh’s Portfolio</div>
               <div className={`vogue text-[44px] sm:text-[66px] `}>
                 ha anh Nguyen
@@ -75,13 +75,13 @@ export default function Home() {
                 position: "absolute",
               }}
             />
-            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1 flex flex-col-reverse sm:flex-row items-center justify gap-10">
+            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-slate-700 relative z-1 flex flex-col-reverse sm:flex-row items-center justify gap-10">
               <div className="max-w-[500px]  relative z-1">
                 <div className="vogue sm:text-[44px] sm:leading-[40px] text-[28px] leading-[28px] text-gray-800 relative">
                   The Art of Painting on Pottery: A Tribute to Vietnam’s
                   Heritage
                 </div>
-                <div className="pt-4 text-gray-600 font-medium sm:leading-9">
+                <div className="pt-4 text-slate-700 font-medium sm:leading-9">
                   My love for Vietnam’s traditional cultural values and the
                   lotus flower - Vietnam’s symbolic bloom - has led me to the
                   art of painting on pottery. Growing up near a renowned ceramic
@@ -112,8 +112,8 @@ export default function Home() {
                 left: "10%",
               }}
             />
-            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1">
-              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10 sm:leading-9">
+            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-slate-700 relative z-1">
+              <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10 sm:leading-9 ">
                 <div>
                   Pottery is a time-honored craft, embodying history,
                   creativity, and cultural identity. Ceramic sculpting and
@@ -146,7 +146,7 @@ export default function Home() {
                 bottom: "0%",
               }}
             />
-            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-gray-700 relative z-1">
+            <div className="max-w-[900px] mx-auto pt-5 sm:pt-8 text-slate-700 relative z-1">
               <div className="flex flex-col-reverse sm:flex-row items-center justify gap-10 sm:leading-9">
                 <div>
                   As tradition meets modernity, ceramic artistry continues to

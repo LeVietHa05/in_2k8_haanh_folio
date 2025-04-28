@@ -10,7 +10,7 @@ const auctionItems = [
     title: "Whispers to the Sun",
     des: "A lotus leans gently toward the golden morning sun, surrounded by lush green leaves. This porcelain plate captures the quiet connection between light and life.",
     medium: "Hand-sculpted, glazed ceramic",
-    dimentions: null,
+    dimentions: "22cm x 22cm",
     technique: "Hand-painted underglaze",
     year: 2024,
     imgs: [
@@ -27,7 +27,7 @@ const auctionItems = [
     title: "Crane’s Dance, Lotus’ Scent",
     des: "A tall ceramic vase decorated with a hand-painted lotus blossom and a graceful crane, symbolizing purity and peace. The soft brushstrokes and warm tones create a tranquil, timeless aesthetic.",
     medium: "Hand-sculpted, glazed ceramic",
-    dimentions: "Approx. 30 cm height",
+    dimentions: "27cm x 12cm",
     technique: "Hand-painted underglaze",
     year: 2024,
     imgs: [
@@ -44,7 +44,7 @@ const auctionItems = [
     title: "Koi’s Whisper",
     des: "A dreamy underwater world where Koi fish drift gracefully beneath a blooming lotus. Vivid blues and oranges bring depth and movement to this peaceful scene.",
     medium: "Hand-sculpted, glazed ceramic",
-    dimentions: null,
+    dimentions: "15cm x 15cm",
     technique: "Hand-painted underglaze",
     year: 2024,
     imgs: [
@@ -61,7 +61,7 @@ const auctionItems = [
     title: "Blossoming Silence",
     des: "This round vase bursts with the serenity of a lotus bud unfolding at dawn. Soft greens and deep blues reflect a moment of stillness before the bloom",
     medium: "Hand-sculpted, glazed ceramic",
-    dimentions: null,
+    dimentions: "11cm x 9cm",
     technique: "Hand-painted underglaze",
     year: 2024,
     imgs: [
@@ -78,7 +78,7 @@ const auctionItems = [
     title: "Echoes of a Quiet Pond",
     des: "Delicate lotus blooms drift gently across this tall ceramic vase, their soft pink petals whispering memories of still waters and fading summer light. A tranquil and timeless tribute to nature's calm",
     medium: "Hand-sculpted, glazed ceramic",
-    dimentions: null,
+    dimentions: "26cm x 10cm",
     technique: "Hand-painted underglaze",
     year: 2024,
     imgs: [
@@ -95,7 +95,7 @@ const auctionItems = [
     title: "Ripples of the Lotus Pond",
     des: "A playful frog swims among floating lily pads and a radiant lotus in bloom. The water’s swirling texture captures a moment of joy in nature’s hidden corners.",
     medium: "Hand-sculpted, glazed ceramic",
-    dimentions: null,
+    dimentions: "17cm x 17cm",
     technique: "Hand-painted underglaze",
     year: 2024,
     imgs: [

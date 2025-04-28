@@ -9,8 +9,8 @@ export default function NoAuthorized() {
   const searchParams = useSearchParams();
 
   // Lấy redirect URL và invalidKey từ query parameters
-  const redirectUrl = searchParams.get("redirect") || "/";
-  const isInvalidKey = searchParams.get("invalidKey") === "true";
+  const redirectUrl = searchParams?.get("redirect") || "/";
+  const isInvalidKey = searchParams?.get("invalidKey") === "true";
 
   // Kiểm tra invalidKey và xóa localStorage nếu cần
   useEffect(() => {
