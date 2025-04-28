@@ -77,7 +77,7 @@ export default function Contact() {
       // Validate toàn bộ form trước khi gửi
       await formSchema.validate(formData, { abortEarly: false });
 
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/api/send-email?specialKey=development", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
