@@ -1,6 +1,6 @@
 export default function Copyright() {
   return (
-    <div className="max-w-[1080px] sm:text-xl sm:px-20 sm:py-10 p-4 mx-auto bg-white/30 backdrop-blur-sm leading-9">
+    <div className="max-w-[1080px] sm:text-xl sm:px-20 sm:py-10 p-4 mx-auto bg-white/30 backdrop-blur-sm leading-9 text-justify">
       <div className="text-2xl font-semibold pb-8">Copyright & Disclaimer</div>
       <div className="pb-8">
         Nguyen Ha Anh welcomes you to the website. By viewing the pages of this

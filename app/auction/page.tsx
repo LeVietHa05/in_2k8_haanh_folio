@@ -168,7 +168,7 @@ export default function Aution() {
   }, [selectedMedia, selectedImageIndex]);
 
   return (
-    <div className="background-container pb-8 text-gray-700 mx:pt-10 leading-9">
+    <div className="background-container pb-8 text-xl text-gray-700 mx:pt-10 leading-9">
       <div className="max-w-[1440px] mx-auto sm:px-15 px-4">
         <main className="">
           {auctionItems.map((item, index) => {

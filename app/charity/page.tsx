@@ -24,7 +24,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="background-container pb-8 text-slate-700 text-justify text-base sm:text-2xl leading-loose sm:leading-9">
+    <div className="background-container pb-8 text-slate-700 text-justify font-medium text-base sm:text-2xl leading-loose sm:leading-9">
       <div className="sm:max-w-[1440px] w-full mx-auto sm:px-20 px-3">
         <main>
           {/* main here */}
@@ -92,7 +92,7 @@ export default function Home() {
                 <div className=" font-bold font-['Montserrat'] leading-9">
                   Key Activities:
                 </div>
-                <div className=" font-medium font-['Montserrat'] leading-9 pt-4">
+                <div className="font-['Montserrat'] leading-9 pt-4">
                   The project involves planting up to ~8,000 seedlings of acacia
                   trees per 2 hectares of barren land provided by our corporate
                   sponsors, supporting seedling supplies, and creating job
@@ -104,7 +104,7 @@ export default function Home() {
                 <div className="  font-bold font-['Montserrat']">
                   Groundbreaking ceremony:
                 </div>
-                <div className="  font-medium font-['Montserrat']  pt-4">
+                <div className="font-['Montserrat']  pt-4">
                   On June 4, 2025, Eco Wander successfully held the
                   groundbreaking ceremony in Ban Chang village, Hoa Muc Commune,
                   Cho Moi District, Bac Kan Province.
