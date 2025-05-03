@@ -31,16 +31,16 @@ export default function Home() {
               <div className={`vogue text-[44px] sm:text-[66px] `}>
                 ha anh Nguyen
               </div>
-              <div className="flex gap-4">
+              <div className="flex items-center justify-center gap-4">
                 <CustomBTN
                   text={"What's more"}
                   _href="/aboutme"
                   customClass="hover:bg-white/60 hover:text-purple-600"
                 />
-                <CustomBTN
+                {/* <CustomBTN
                   text={"My Resume"}
                   customClass="hover:bg-white/60 hover:text-purple-600"
-                />
+                /> */}
               </div>
               <div
                 className={`text-[#47761D] text-[34px] sm:text-[56px] ${monteCarlo.className}`}>
