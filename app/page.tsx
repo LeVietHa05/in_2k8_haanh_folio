@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CustomBTN from "./ui/CustomBTN";
-import { montserrat, monteCarlo } from "./ui/fonts";
+import { montserrat} from "./ui/fonts";
 
 export default function Home() {
   return (
@@ -26,12 +26,15 @@ export default function Home() {
                 alt="abc"></Image>
             </div>
             <div
-              className={`text-gray-700 text-xl sm:text-2xl flex flex-col gap-5 ${montserrat.className} bg-white/30 backdrop-blur-sm rounded-xl p-8`}>
-              <div className="font-semibold">Welcome to Ha Anh’s Portfolio</div>
-              <div className={`vogue text-[44px] sm:text-[66px] `}>
+              className={`text-gray-700 text-xl sm:text-2xl flex flex-col gap-5 ${montserrat.className} bg-white/30 backdrop-blur-sm rounded-xl p-4 sm:p-8`}>
+              <div className=" text-2xl font-semibold font-['Montserrat'] leading-9">
+                Welcome to Ha Anh’s Portfolio
+              </div>
+              <div
+                className={`vogue text-5xl sm:text-6xl font-normal leading-12`}>
                 ha anh Nguyen
               </div>
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center justify-start gap-4">
                 <CustomBTN
                   text={"What's more"}
                   _href="/aboutme"
@@ -43,7 +46,7 @@ export default function Home() {
                 /> */}
               </div>
               <div
-                className={`text-[#47761D] text-[34px] sm:text-[56px] ${monteCarlo.className}`}>
+                className={`text-lime-700 text-2xl sm:text-4xl font-normal font-['Vogue'] leading-relaxed sm:leading-loose`}>
                 The Art of Painting on Pottery
               </div>
             </div>

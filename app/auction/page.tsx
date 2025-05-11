@@ -207,7 +207,7 @@ export default function Aution() {
                   </div>
                 </div>
                 {/* text */}
-                <div className="flex sm:px-8 px-4 sm:gap-10 gap-4 flex-col sm:flex-row">
+                <div className="flex sm:px-8 px-4 sm:gap-10 gap-4 flex-col sm:flex-row text-justify">
                   <div>
                     <h2 className="text-[#518224] vogue sm:text-3xl text-2xl">
                       {item.title}

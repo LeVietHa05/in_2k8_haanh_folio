@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { montserrat, monteCarlo } from "../ui/fonts";
+import { montserrat } from "../ui/fonts";
+import { Video } from "../ui/video";
 
 export default function Home() {
   return (
@@ -36,29 +37,18 @@ export default function Home() {
                 alt="abc"></Image>
             </div>
             <div
-              className={`text-slate-700 text-xl sm:text-2xl flex flex-col gap-7 ${montserrat.className} bg-white/30 backdrop-blur-sm rounded-xl p-8`}>
-              <div className="font-medium">Welcome to Ha Anh’s Portfolio</div>
-              <div className={`vogue text-[44px] sm:text-[66px] `}>
+              className={`text-slate-700 text-xl sm:text-2xl flex flex-col gap-5 ${montserrat.className} z-2 bg-white/30 backdrop-blur-sm rounded-xl p-4 sm:p-8`}>
+              <div className=" text-2xl font-semibold font-['Montserrat'] leading-9">
+                Welcome to Ha Anh’s Portfolio
+              </div>
+              <div
+                className={`vogue text-5xl sm:text-6xl font-normal leading-12`}>
                 ha anh Nguyen
               </div>
               <div
-                className={`text-[#47761D] text-[34px] sm:text-[56px] ${monteCarlo.className}`}>
+                className={`text-lime-700 text-2xl sm:text-4xl font-normal font-['Vogue'] leading-relaxed sm:leading-loose`}>
                 The Art of Painting on Pottery
               </div>
-              <Image
-                src={"/smoothinnercorner.svg"}
-                width={58}
-                height={73}
-                alt="icon"
-                className="absolute top-0 right-30 hidden sm:block"
-              />
-              <Image
-                src={"/smoothinnercorner.svg"}
-                width={45}
-                height={57}
-                className="absolute top-10 left-0 hidden sm:block"
-                alt="icon"
-              />
             </div>
           </div>
 
@@ -93,8 +83,8 @@ export default function Home() {
                 <source srcSet="/aboutme/P1.png" media="(min-width: 640px)" />
                 <Image
                   src={"/aboutme/P1-mobile.png"}
-                  width={506}
-                  height={675}
+                  width={360}
+                  height={380}
                   alt="anh 1"
                   className="w-80 sm:w-96 h-96"></Image>
               </picture>
@@ -127,7 +117,7 @@ export default function Home() {
                   <source srcSet="/aboutme/P2.png" media="(min-width: 640px)" />
                   <Image
                     src={"/aboutme/P2-mobile.png"}
-                    width={506}
+                    width={360}
                     height={675}
                     alt="anh 2"
                     className="w-80 sm:w-96 h-96"></Image>
@@ -165,7 +155,7 @@ export default function Home() {
                 <div className="shrink-0">
                   <Image
                     src={"/aboutme/P3.png"}
-                    width={506}
+                    width={360}
                     height={675}
                     alt="anh 3"
                     className="w-80 sm:w-96 h-[546px]"></Image>
@@ -191,7 +181,7 @@ export default function Home() {
                   <div className="shrink-0">
                     <Image
                       src={"/aboutme/P4.png"}
-                      width={506}
+                      width={360}
                       height={675}
                       alt="anh 4"
                       className="w-80 sm:w-96 h-[460px]"></Image>
@@ -214,34 +204,51 @@ export default function Home() {
                   <div className="shrink-0">
                     <Image
                       src={"/aboutme/P5.png"}
-                      width={506}
+                      width={360}
                       height={675}
                       alt="anh 5"
                       className="w-80 sm:w-96 h-[460px]"></Image>
                   </div>
                 </div>
-                <br />
-                For generations, the lotus has been regarded as a familiar yet
-                noble flower. In Vietnamese consciousness, it symbolizes purity
-                and brightness, considered the national flower of Vietnam and
-                representing the spirit and identity of the Vietnamese soul. The
-                lotus is closely associated with beauty, homeland sentiments,
-                and the essence of the Vietnamese people—especially the purity,
-                virtue, and elegance of Vietnamese women. It also symbolizes
-                love, devotion, and unwavering fidelity.
-                <br />
-                <br />
-                Beyond that, the lotus carries deep philosophical meanings in
-                both space and time—encompassing the past, present, and
-                future—reflecting the cycle of reincarnation and human
-                self-perfection. The lotus root and tuber represent the past,
-                the seed pod symbolizes the present, and the seeds embody the
-                future.
-                <br />
-                <br />
-                My ceramic artworks featuring the lotus flower are a story born
-                from this love for my homeland and its traditional cultural
-                values.
+                <div className=" pt-5 sm:pt-8 flex flex-col-reverse sm:flex-row items-center justify gap-10 ">
+                  <div>
+                    For generations, the lotus has been regarded as a familiar
+                    yet noble flower. In Vietnamese consciousness, it symbolizes
+                    purity and brightness, considered the national flower of
+                    Vietnam and representing the spirit and identity of the
+                    Vietnamese soul. The lotus is closely associated with
+                    beauty, homeland sentiments, and the essence of the
+                    Vietnamese people—especially the purity, virtue, and
+                    elegance of Vietnamese women. It also symbolizes love,
+                    devotion, and unwavering fidelity.
+                  </div>
+                  <div className="shrink-0">
+                    <Video
+                      _link={"/video/about1.mp4"}
+                      width={360}
+                      height={500} className=""></Video>
+                  </div>
+                </div>
+                <div className=" pt-5 sm:pt-8 flex flex-col-reverse sm:flex-row items-center justify gap-10 ">
+                  <div>
+                    Beyond that, the lotus carries deep philosophical meanings
+                    in both space and time—encompassing the past, present, and
+                    future—reflecting the cycle of reincarnation and human
+                    self-perfection. The lotus root and tuber represent the
+                    past, the seed pod symbolizes the present, and the seeds
+                    embody the future.
+                    <br />
+                    My ceramic artworks featuring the lotus flower are a story
+                    born from this love for my homeland and its traditional
+                    cultural values.
+                  </div>
+                  <div className="shrink-0">
+                    <Video
+                      width={360}
+                      height={500}
+                      _link={"/video/about2.mp4"}></Video>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
