@@ -41,7 +41,8 @@ export default function Home() {
                 LotusMed Vietnam (Prescreening thyroid cancer for women). <br />
                 <Link
                   className="underline text-[#518224] w-full"
-                  href={"https://www.facebook.com/lotusmedvietnam"}>
+                  href={"https://www.facebook.com/lotusmedvietnam"}
+                >
                   https://www.facebook .com/lotusmedvietnam
                 </Link>
               </div>
@@ -50,7 +51,63 @@ export default function Home() {
                   src={"/charity/1.png"}
                   width={928}
                   height={278}
-                  alt="anh bia fb"></Image>
+                  alt="anh bia fb"
+                ></Image>
+              </div>
+              <div className="sm:max-w-[900px] w-full mx-auto ">
+                <div className="font-bold text-3xl">Season 2</div>
+                <div>
+                  <span>Position: </span>
+                  <span>President & Head of Finance</span>
+                  <div className="mt-4 font-bold font-['Montserrat'] leading-9">
+                    Key Activities:
+                  </div>
+                  <div className="font-['Montserrat'] leading-9 pt-4">
+                    On 28 June 2025, LotusMed Vietnam and TTH Vinh General
+                    Hospital held a thyroid screening program and basic health
+                    index measurements for adolescent girls and children at the
+                    SOS Vinh Children&apos;s Village. LotusMed Vietnam also
+                    accompanied the I-Hope Foundation and other organizations
+                    and volunteer groups in the “Wings of Dreams” program at the
+                    SOS Children’s Village Vinh.
+                  </div>
+                </div>
+                <div className="py-10">
+                  <Image
+                    src={"/charity/lotus_1.png"}
+                    width={928}
+                    height={615}
+                    alt="anh bia fb"
+                  ></Image>
+                  <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-1 sm:pt-10 pt-1">
+                    <Image
+                      src={"/charity/lotus_2.png"}
+                      width={442}
+                      height={687}
+                      alt="anh bia fb"
+                    ></Image>
+                    <Image
+                      src={"/charity/lotus_3.png"}
+                      width={442}
+                      height={687}
+                      alt="anh bia fb"
+                    ></Image>
+                  </div>
+                  <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-1 sm:pt-10 pt-1">
+                    <Image
+                      src={"/charity/lotus_4.png"}
+                      width={442}
+                      height={293}
+                      alt="anh bia fb"
+                    ></Image>
+                    <Image
+                      src={"/charity/lotus_5.png"}
+                      width={442}
+                      height={293}
+                      alt="anh bia fb"
+                    ></Image>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -65,9 +122,20 @@ export default function Home() {
                 <br />
                 <Link
                   className="underline text-[#518224]"
-                  href={"https://www.facebook.com/eco.wander24"}>
+                  href={"https://www.facebook.com/eco.wander24"}
+                >
                   https://www.facebook .com/eco.wander24
                 </Link>
+                <br />
+                <br />
+                <div className="font-bold text-3xl">Season 3</div>
+                <div className="font-bold ">
+                  <span>Position: </span>
+                  <span>
+                    President & Head of Finance | Sponsorship raised:
+                    174.000.000 VND
+                  </span>
+                </div>
               </div>
               <div className="py-10 flex flex-col sm:flex-row gap-3 sm:gap-10 justify-between shrink">
                 <div className="shrink">
@@ -75,14 +143,16 @@ export default function Home() {
                     src={"/charity/2.png"}
                     width={442}
                     height={413}
-                    alt="eco.wander24 1"></Image>
+                    alt="eco.wander24 1"
+                  ></Image>
                 </div>
                 <div className="shrink">
                   <Image
                     src={"/charity/3.png"}
                     width={442}
                     height={413}
-                    alt="eco.wander24 1"></Image>
+                    alt="eco.wander24 1"
+                  ></Image>
                 </div>
               </div>
             </div>
@@ -119,7 +189,8 @@ export default function Home() {
                       width={img.w}
                       height={img.h}
                       alt=""
-                      key={i}></Image>
+                      key={i}
+                    ></Image>
                   );
                 })}
               </div>
