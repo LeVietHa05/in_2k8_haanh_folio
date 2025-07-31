@@ -40,14 +40,21 @@ export default function Home() {
                 <br />
                 <br />
                 <div className="font-bold text-4xl text-center"> LotusMed</div>
-                <div className="font-bold text-3xl">Season 1</div>
-                LotusMed Vietnam (Prescreening thyroid cancer for women). <br />
                 <Link
                   className="underline text-[#518224] w-full"
                   href={"https://www.facebook.com/lotusmedvietnam"}
                 >
                   https://www.facebook .com/lotusmedvietnam
                 </Link>
+                <br />
+                <br />
+                <div className="font-bold text-3xl">Season 1</div>
+                <div className="font-['Montserrat'] leading-9 pt-4">
+                  Successfully carried out a program of general health check and
+                  screening/early detection of thyroid cancer for 130 womeDn aged
+                  30 to 65 year-old in poor rural areas of Nghe An province.
+                </div>
+                LotusMed Vietnam (Prescreening thyroid cancer for women). <br />
               </div>
               <div className="py-10">
                 <Image
@@ -118,6 +125,12 @@ export default function Home() {
               <div className="font-bold text-4xl text-center"> EcoWander</div>
               <div className="sm:max-w-[900px] w-full mx-auto sm:pt-10 pt-4">
                 <div className="font-bold text-3xl">Season 3</div>
+                <Link
+                  className="underline text-[#518224]"
+                  href={"https://www.facebook.com/eco.wander24"}
+                >
+                  https://www.facebook .com/eco.wander24
+                </Link>
                 Founded in 2021, Eco Wander is a non-profit organization
                 established by students in Vietnam with the mission of raising
                 public awareness about environmental protection, focusing on
@@ -125,12 +138,6 @@ export default function Home() {
                 environment.
                 <br />
                 <br />
-                <Link
-                  className="underline text-[#518224]"
-                  href={"https://www.facebook.com/eco.wander24"}
-                >
-                  https://www.facebook .com/eco.wander24
-                </Link>
                 <br />
                 <br />
                 <div className="font-bold ">
