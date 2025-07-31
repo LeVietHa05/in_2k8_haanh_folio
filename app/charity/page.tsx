@@ -34,10 +34,13 @@ export default function Home() {
                 Most of the proceeds from the sale of pottery art pieces are
                 used to fund environmental and charitable projects founded by
                 Nguyễn Hà Anh. These philanthropic organizations and projects
-                include LOTUSMED VIETNAM (Public Healthcare) and ECO WANDER
-                (Environment).
+                include <span className="font-bold">LOTUSMED VIETNAM</span>{" "}
+                (Public Healthcare) and{" "}
+                <span className="font-bold">ECO WANDER</span> (Environment).
                 <br />
                 <br />
+                <div className="font-bold text-4xl text-center"> LotusMed</div>
+                <div className="font-bold text-3xl">Season 1</div>
                 LotusMed Vietnam (Prescreening thyroid cancer for women). <br />
                 <Link
                   className="underline text-[#518224] w-full"
@@ -112,7 +115,9 @@ export default function Home() {
             </div>
 
             <div className="bg-white/30 backdrop-blur-sm mt-10 sm:p-10 flex flex-col items-center rounded-lg">
-              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-20 pt-4">
+              <div className="font-bold text-4xl text-center"> EcoWander</div>
+              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-10 pt-4">
+                <div className="font-bold text-3xl">Season 3</div>
                 Founded in 2021, Eco Wander is a non-profit organization
                 established by students in Vietnam with the mission of raising
                 public awareness about environmental protection, focusing on
@@ -128,7 +133,6 @@ export default function Home() {
                 </Link>
                 <br />
                 <br />
-                <div className="font-bold text-3xl">Season 3</div>
                 <div className="font-bold ">
                   <span>Position: </span>
                   <span>
@@ -155,10 +159,7 @@ export default function Home() {
                   ></Image>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-white/30 backdrop-blur-sm mt-10 sm:p-10 flex flex-col items-center rounded-lg">
-              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-20 pt-4">
+              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-10 pt-4">
                 <div className=" font-bold font-['Montserrat'] leading-9">
                   Key Activities:
                 </div>
@@ -170,7 +171,7 @@ export default function Home() {
                   and harvesting forest products.
                 </div>
               </div>
-              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-20 pt-4">
+              <div className="sm:max-w-[900px] w-full mx-auto sm:pt-10 pt-4">
                 <div className="  font-bold font-['Montserrat']">
                   Groundbreaking ceremony:
                 </div>
@@ -180,7 +181,6 @@ export default function Home() {
                   Cho Moi District, Bac Kan Province.
                 </div>
               </div>
-
               <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-1 pt-10">
                 {imgs.map((img, i) => {
                   return (
