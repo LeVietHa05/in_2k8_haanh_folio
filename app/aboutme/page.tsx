@@ -46,8 +46,8 @@ export default function Home() {
                 ha anh Nguyen
               </div>
               <div
-                className={`text-lime-700 text-2xl sm:text-4xl font-normal font-['Vogue'] leading-relaxed sm:leading-loose`}>
-                The Art of Painting on Pottery
+                className={`text-lime-700 text-2xl sm:text-2xl font-normal font-['Vogue'] leading-relaxed sm:leading-loose`}>
+                The Art of Painting on <br></br>Pottery, Acrylic and Watercolor
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
                   lotus flower - Vietnam’s symbolic bloom - has led me to the
                   art of painting on pottery. Growing up near a renowned ceramic
                   village, surrounded by blooming lotuses each summer, I
-                  developed a deep connection to both. 
+                  developed a deep connection to both.
                 </div>
               </div>
               <picture className="shrink-0">
