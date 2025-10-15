@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Gallery, { Image as GalleryImage } from "../components/Gallery";
 export default function Home() {
   // popup and image
   const imgOnSaleLink = [
@@ -48,6 +48,117 @@ export default function Home() {
     },
   ];
 
+  const imgs: GalleryImage[] = [
+    {
+      link: "/artwork/1.jpg",
+      width: "",
+      height: "",
+      title: "'Golden Harvest' (2022)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/2.jpg",
+      width: "",
+      height: "",
+      title: "'Blossoms' (2022)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/3.jpg",
+      width: "",
+      height: "",
+      title: "'Twilight Whispers' (2021)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/4.jpg",
+      width: "",
+      height: "",
+      title: "'Dusk and Dawn' (2021)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/5.jpg",
+      width: "",
+      height: "",
+      title: "'Daisy' (2021)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/6.jpg",
+      width: "",
+      height: "",
+      title: "'Lotus' (2021)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/7.jpg",
+      width: "",
+      height: "",
+      title: "'Lotus Bloom' (2020)",
+      description: "",
+      material: "Watercolor",
+      size: "30cm x 40cm",
+    },
+    {
+      link: "/artwork/8.jpg",
+      width: "",
+      height: "",
+      title: "'Into the Woods' (2020)",
+      description: "",
+      material: "Watercolor",
+      size: "21cm x 30cm",
+    },
+    {
+      link: "/artwork/9.jpg",
+      width: "",
+      height: "",
+      title: "'The Road Home' (2020)",
+      description: "",
+      material: "Watercolor",
+      size: "21cm x 30cm",
+    },
+    {
+      link: "/artwork/10.jpg",
+      width: "",
+      height: "",
+      title: "'Golden Sunset' (2021)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/11.jpg",
+      width: "",
+      height: "",
+      title: "'Dad and I' (2020)",
+      description: "",
+      material: "Acrylic",
+      size: "40cm x 60cm",
+    },
+    {
+      link: "/artwork/12.jpg",
+      width: "",
+      height: "",
+      title: "'Winter Breeze' (2019)",
+      description: "",
+      material: "Watercolor",
+      size: "21cm x 30cm",
+    },
+  ]
+
   return (
     <div className="background-container pb-8 text-gray-50 pt-10">
       <Image
@@ -86,6 +197,7 @@ export default function Home() {
             })}
           </div>
         </main>
+        <Gallery img={imgs} />
       </div>
     </div>
   );
