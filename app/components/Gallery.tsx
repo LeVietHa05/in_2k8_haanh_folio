@@ -60,10 +60,10 @@ export default function Gallery({ img }: { img: Image[] }) {
         <div className="mt-20 backdrop-blur-sm bg-white/30 rounded-lg">
             <div className="">
                 <div className="z-1  text-[#518224]">
-                    <div className="vogue uppercase text-center text-[44px] leading-[40px] py-4">
+                    <div className="vogue uppercase text-center text-2xl sm:text-[44px] leading-[40px] py-4 px-4">
                         Ha Anh&apos;s Paintings
                     </div>
-                    <div className="w-2/3 mx-auto text-center">
+                    <div className="w-full sm:w-2/3 mx-auto text-center px-4">
                         This is Ha Anh&apos;s collection of acrylic and watercolor paintings. Inspired by the beauty of nature, these works capture shifting skies, flowing landscapes, and the quiet presence of trees and water. Blending the vibrancy of acrylics with the softness of watercolor, the collection reflects the strength and delicacy of the natural world.
                     </div>
                 </div>
@@ -74,9 +74,9 @@ export default function Gallery({ img }: { img: Image[] }) {
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                 >
                     {slides.map((slide, slideIndex) => (
-                        <div key={slideIndex} className="flex-shrink-0 w-full flex justify-center gap-6 p-6">
+                        <div key={slideIndex} className="flex-shrink-0 w-full flex flex-col sm:flex-row justify-center items-center gap-6 p-6">
                             {slide.map((each, i) => (
-                                <div key={i} className="bg-white/20 backdrop-blur-sm rounded-lg p-4 shadow-lg w-80 cursor-pointer" onClick={() => openModal(each)}>
+                                <div key={i} className="bg-white/20 backdrop-blur-sm rounded-lg p-4 shadow-lg w-full sm:w-80 cursor-pointer" onClick={() => openModal(each)}>
                                     <Image
                                         src={each.link}
                                         alt={each.title}
@@ -97,13 +97,13 @@ export default function Gallery({ img }: { img: Image[] }) {
                 </div>
                 <button
                     onClick={prevSlide}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/20 rounded-full p-2 shadow-lg"
+                    className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/20 rounded-full p-2 shadow-lg"
                 >
                     <Image src={'/chevron-left.svg'} width={24} height={24} alt=""></Image>
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/20 rounded-full p-2 shadow-lg"
+                    className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/20 rounded-full p-2 shadow-lg"
                 >
                     <Image src={'/chevron-right.svg'} width={24} height={24} alt=""></Image>
                 </button>
