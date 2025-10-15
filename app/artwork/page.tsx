@@ -189,7 +189,7 @@ export default function Home() {
                       className="group-hover:scale-125 focus:scale-125 group-active:scale-125"
                     />
                     <div className="text-[#40651D] font-semibold text-[22px] opacity-0 group-hover:opacity-100 group-active:opacity-100 absolute bottom-0 right-0 left-0 text-center backdrop-blur-sm py-2 bg-white/30">
-                      Click here for PRICE/AUTION
+                      Click here for PRICE/AUCTION
                     </div>
                   </div>
                 </Link>
