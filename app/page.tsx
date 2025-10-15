@@ -46,8 +46,8 @@ export default function Home() {
                 /> */}
               </div>
               <div
-                className={`text-lime-700 text-2xl sm:text-4xl font-normal font-['Vogue'] leading-relaxed sm:leading-loose`}>
-                The Art of Painting on Pottery, Acrylic and Watercolor
+                className={`text-lime-700 text-2xl sm:text-3xl font-normal font-['Vogue'] leading-relaxed sm:leading-loose`}>
+                The Art of Painting on <br></br>Pottery, Acrylic and Watercolor
               </div>
             </div>
           </div>
