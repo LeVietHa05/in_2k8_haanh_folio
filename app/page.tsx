@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CustomBTN from "./ui/CustomBTN";
-import { montserrat} from "./ui/fonts";
+import { montserrat } from "./ui/fonts";
 
 export default function Home() {
   return (
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div
                 className={`text-lime-700 text-2xl sm:text-4xl font-normal font-['Vogue'] leading-relaxed sm:leading-loose`}>
-                The Art of Painting on Pottery
+                The Art of Painting on Pottery, Acrylic and Watercolor
               </div>
             </div>
           </div>
