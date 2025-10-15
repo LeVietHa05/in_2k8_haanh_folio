@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 export interface Image {
     link: string;
@@ -23,7 +24,7 @@ export default function Gallery({ img }: { img: Image[] }) {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % totalSlides);
-        }, 3000);
+        }, 10000);
         return () => clearInterval(interval);
     }, [totalSlides]);
 
@@ -56,9 +57,9 @@ export default function Gallery({ img }: { img: Image[] }) {
     const slides = getSlides();
 
     return (
-        <div className="mt-20 backdrop-blur-sm bg-white/30 ">
-            <div className="relative">
-                <div className="z-1 relative text-[#518224]">
+        <div className="mt-20 backdrop-blur-sm bg-white/30 rounded-lg">
+            <div className="">
+                <div className="z-1  text-[#518224]">
                     <div className="vogue uppercase text-center text-[44px] leading-[40px] py-4">
                         Ha Anh&apos;s Paintings
                     </div>
@@ -96,25 +97,26 @@ export default function Gallery({ img }: { img: Image[] }) {
                 </div>
                 <button
                     onClick={prevSlide}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/50 hover:bg-white/70 rounded-full p-2 shadow-lg"
+                    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/20 rounded-full p-2 shadow-lg"
                 >
-                    ‹
+                    <Image src={'/chevron-left.svg'} width={24} height={24} alt=""></Image>
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-white/70 rounded-full p-2 shadow-lg"
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/20 rounded-full p-2 shadow-lg"
                 >
-                    ›
+                    <Image src={'/chevron-right.svg'} width={24} height={24} alt=""></Image>
                 </button>
             </div>
-            {selectedImage && (
-                <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50" onClick={closeModal}>
-                    <div className="bg-white rounded-lg p-6 max-w-4xl max-h-full overflow-auto" onClick={(e) => e.stopPropagation()}>
+
+            {selectedImage && createPortal((
+                <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 rounded-lg" onClick={closeModal}>
+                    <div className="bg-white rounded-lg p-6 max-w-4xl max-h-full my-40 overflow-auto" onClick={(e) => e.stopPropagation()}>
                         <button
                             onClick={closeModal}
-                            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl"
+                            className="absolute top-4 right-4 text-2xl cursor-pointer"
                         >
-                            ×
+                            <Image src={'/close.svg'} width={24} height={24} alt=""></Image>
                         </button>
                         <Image
                             src={selectedImage.link}
@@ -131,7 +133,7 @@ export default function Gallery({ img }: { img: Image[] }) {
                         </div>
                     </div>
                 </div>
-            )}
+            ), document.body)}
         </div>
     );
 }
