@@ -51,7 +51,7 @@ export default function Home() {
                 <div className="font-bold text-3xl">Season 1</div>
                 <div className="font-['Montserrat'] leading-9 pt-4">
                   Successfully carried out a program of general health check and
-                  screening/early detection of thyroid cancer for 130 womeDn aged
+                  screening/early detection of thyroid cancer for 130 women aged
                   30 to 65 year-old in poor rural areas of Nghe An province.
                 </div>
                 LotusMed Vietnam (Prescreening thyroid cancer for women). <br />
